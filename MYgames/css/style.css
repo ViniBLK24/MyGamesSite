@@ -1,0 +1,86 @@
+:root {
+    --purple: hsl(291, 84%, 17%);
+    --purple-alpha: hsla(291, 84%, 17%, 0.903);
+    --purple-57: hsl(291, 84%, 57%);
+}
+
+.bg-purple {background-color: var(--purple-alpha);}
+
+.text-purple {color: var(--purple);}
+
+
+.btn-outline-purple {
+    --bs-btn-color: var(--purple);
+    --bs-btn-border-color: var(--purple);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--purple);
+    --bs-btn-hover-border-color: var(--purple);
+    --bs-btn-focus-shadow-rgb: 33, 37, 41;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--purple);
+    --bs-btn-active-border-color: var(--purple);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--purple);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--purple);
+    --bs-gradient: none;
+}
+
+
+/* alterando o accordion */
+.accordion-button {
+    font-size: 20px;
+    box-shadow: none !important;
+}
+
+.accordion-item {
+    border: 1px solid var(--purple-alpha);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--purple-alpha);
+    color: #fff;
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0%) invert(100%);
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+
+.footer{
+    background-color: var(--purple-alpha);
+    color: #fff;
+    min-height: 30vh;
+}
+
+.footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.icone{
+ color: #fff;
+ transition: 5s;   
+}
+
+.icone:hover{
+color: var(--purple);
+}
+
+
+/* tentando arrumar a altura do carousel */
+@media(min-width: 1024px) {
+    .carousel-inner {
+        height: 90vh;
+    }  
+}

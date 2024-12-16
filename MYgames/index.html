@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Loja de games com os principais lançamentos, venda de consoles, assistência técnica">
+
+    <title>MyGames</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- menu de navegação -->
+    <nav class="navbar navbar-expand-lg bg-purple">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#"><i class="bi bi-controller me-2"></i>MyGames</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#categorias">Categorias</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Games que amamos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#modalCuphead">CupHead</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#modalAlexKidd">Alex Kidd</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#modalGodWar">God
+                                    of War</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link text-light">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#videos" class="nav-link text-light">Vídeos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#conta" class="nav-link text-light">Criar Conta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal do game 1 -->
+    <section class="modal fade" id="modalCuphead" tabindex="-1" aria-labelledby="cupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title display-5" id="cupModalLabel">CupHead</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/modal/cuphead.jpg" alt="Imagem do game CupHead" class="img-fluid">
+                    <p class="my-3">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ut sit, ducimus eveniet
+                        possimus
+                        perferendis commodi quod, ipsa nesciunt repudiandae id enim culpa soluta doloribus hic
+                        accusantium
+                        eos fugit ipsam magnam nulla? Error esse rem dolore perferendis illo aperiam provident,
+                        deleniti
+                        velit adipisci, ex, quae voluptates impedit repudiandae in maxime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fim Modal do game 1 -->
+
+    <!-- Modal do game 2 -->
+    <section class="modal fade" id="modalAlexKidd" tabindex="-1" aria-labelledby="alexModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title display-5" id="alexModalLabel">Alex Kidd</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/modal/alexkidd.jpg" alt="Imagem do game Alex Kidd" class="img-fluid">
+                    <p class="my-3">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ut sit, ducimus eveniet
+                        possimus
+                        perferendis commodi quod, ipsa nesciunt repudiandae id enim culpa soluta doloribus hic
+                        accusantium
+                        eos fugit ipsam magnam nulla? Error esse rem dolore perferendis illo aperiam provident,
+                        deleniti
+                        velit adipisci, ex, quae voluptates impedit repudiandae in maxime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fim Modal do game 2 -->
+
+    <!-- Modal do game 3 -->
+    <section class="modal fade" id="modalGodWar" tabindex="-1" aria-labelledby="godModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title display-5" id="godModalLabel">God of War</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/modal/godofwar.jpg" alt="Imagem do game God of War" class="img-fluid">
+                    <p class="my-3">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ut sit, ducimus eveniet
+                        possimus
+                        perferendis commodi quod, ipsa nesciunt repudiandae id enim culpa soluta doloribus hic
+                        accusantium
+                        eos fugit ipsam magnam nulla? Error esse rem dolore perferendis illo aperiam provident,
+                        deleniti
+                        velit adipisci, ex, quae voluptates impedit repudiandae in maxime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fim Modal do game 3 -->
+    <!-- fim menu de navegação -->
+
+    <main class="container my-5">
+
+        <!-- criar a linha do grid -->
+        <section class="row">
+
+            <!-- .1a coluna -->
+            <div class="col-12 col-sm-12 col-md-6">
+                <img src="./images/cards/game-analytics-animate.svg" alt="Imagem de um gamer">
+            </div>
+            <!-- fim 1a. coluna -->
+
+            <!-- 2a. coluna -->
+            <div class="col-12 col-sm-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
+                <h2 class="display-2 text-purple">MyGames</h2>
+                <p class="lead text-center my-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure illum consequatur dolorum
+                    corporis, cumque dicta reiciendis eveniet a vitae magni.
+                </p>
+                <a href="#" class="btn btn-outline-purple">Mais informações</a>
+            </div>
+            <!-- fim 2a. coluna -->
+        </section>
+        <!-- fim linha grid -->
+
+
+        <!-- Carousel  -->
+        <article id="carouselExampleIndicators" class="carousel slide my-5" data-bs-ride="true">
+            <section class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </section>
+            <section class="carousel-inner">
+                <figure class="carousel-item active">
+                    <img src="./images/carousel/alexander-grigoryev-YSEp8dLK8K8-unsplash.jpg" class="d-block w-100"
+                        alt="Imagem do Commodere 64">
+                </figure>
+                <figure class="carousel-item">
+                    <img src="./images/carousel/ben-neale-zpxKdH_xNSI-unsplash.jpg" class="d-block w-100"
+                        alt="Jogos Arcade">
+                </figure>
+                <figure class="carousel-item">
+                    <img src="./images/carousel/boukaih-pRS6itEjhyI-unsplash.jpg" class="d-block w-100"
+                        alt="Imagem do Mario">
+                </figure>
+                <figure class="carousel-item">
+                    <img src="./images/carousel/florian-olivo-Mf23RF8xArY-unsplash.jpg" class="d-block w-100"
+                        alt="Imagem de um gamer">
+                </figure>
+                <figure class="carousel-item">
+                    <img src="./images/carousel/kelly-sikkema-PgToaHfQjq0-unsplash.jpg" class="d-block w-100"
+                        alt="Imagem do game Donkey Kong">
+                </figure>
+            </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </article>
+        <!-- fim Carousel -->
+
+
+
+        <h2 class="display-2 text-center my-4 text-purple" id="categorias">Categorias</h2>
+        <article class="row">
+
+            <!-- 1a. coluna -->
+            <section class="col-12 col-sm-12 col-md-6 col-lg-4 my-3">
+                <div class="card">
+                    <img src="./images/cards/Arcade machine-rafiki.svg" class="card-img-top" alt="Arcade">
+                    <div class="card-body">
+                        <h5 class="card-title text-purple">Arcade</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                        <a href="#" class="btn btn-outline-purple">Clique e conheça</a>
+                    </div>
+                </div>
+            </section>
+            <!-- fim 1a. coluna -->
+
+            <!-- 2a. coluna -->
+            <section class="col-12 col-sm-12 col-md-6 col-lg-4 my-3">
+                <div class="card">
+                    <img src="./images/cards/Gaming-amico.svg" class="card-img-top" alt="Gaming">
+                    <div class="card-body">
+                        <h5 class="card-title text-purple">Gaming</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-outline-purple">Clique e conheça</a>
+                    </div>
+                </div>
+            </section>
+            <!-- fim 2a. coluna -->
+
+            <!-- 3a. coluna -->
+            <section class="col-12 col-sm-12 col-md-6 col-lg-4 my-3">
+                <div class="card">
+                    <img src="./images/cards/Horror video game-rafiki.svg" class="card-img-top" alt="Horror">
+                    <div class="card-body">
+                        <h5 class="card-title text-purple">Horror</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-outline-purple">Clique e conheça</a>
+                    </div>
+                </div>
+            </section>
+            <!-- fim 3a. coluna -->
+
+            <!-- 4a. coluna -->
+            <section class="col-12 col-sm-12 col-md-6 col-lg-4 my-3">
+                <div class="card">
+                    <img src="./images/cards/Online games addiction-pana.svg" class="card-img-top" alt="Online">
+                    <div class="card-body">
+                        <h5 class="card-title text-purple">Online</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-outline-purple">Clique e conheça</a>
+                    </div>
+                </div>
+            </section>
+            <!-- fim 4a. coluna -->
+
+            <!-- 5a. coluna -->
+            <section class="col-12 col-sm-12 col-md-6 col-lg-4 my-3">
+                <div class="card">
+                    <img src="./images/cards/Online games addiction-rafiki.svg" class="card-img-top" alt="Online">
+                    <div class="card-body">
+                        <h5 class="card-title text-purple">Online</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-outline-purple">Clique e conheça</a>
+                    </div>
+                </div>
+            </section>
+            <!-- fim 5a. coluna -->
+
+            <!-- 6a. coluna -->
+            <section class="col-12 col-sm-12 col-md-6 col-lg-4 my-3">
+                <div class="card">
+                    <img src="./images/cards/Select player-amico.svg" class="card-img-top" alt="Players">
+                    <div class="card-body">
+                        <h5 class="card-title text-purple">Players</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-outline-purple">Clique e conheça</a>
+                    </div>
+                </div>
+            </section>
+            <!-- fim 6a. coluna -->
+        </article>
+
+        <!-- accordion -->
+        <h2 class="display-2 text-center my-4 text-purple" id="faq">FAQ</h2>
+
+        <section class="accordion my-4" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Política de trocas
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quaerat ratione ea neque,
+                            facere
+                            odit! Quae tenetur eum debitis sit ab, cumque suscipit magni deserunt odio totam, eius
+                            ducimus
+                            explicabo ipsa in dolor, iure et velit iste veritatis modi exercitationem. Non adipisci
+                            repellendus sed. Voluptates eum iure ipsam! Dolorum optio eligendi architecto mollitia
+                            tempora
+                            ipsam impedit, repellendus perspiciatis, obcaecati repellat officiis tempore itaque! Id
+                            at
+                            cumque, placeat in asperiores nobis ipsum dicta eligendi atque excepturi, numquam quasi
+                            error
+                            quod hic!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Envio e fretes
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus necessitatibus est
+                            magnam qui
+                            quidem repudiandae optio deserunt exercitationem ullam minima saepe, adipisci beatae
+                            nulla
+                            quasi, consectetur dolorum quaerat error eius, temporibus reiciendis quisquam. Error
+                            inventore
+                            illum dolores eius repellendus sunt saepe aspernatur. Iusto corrupti neque beatae,
+                            cupiditate ad
+                            quae ipsum placeat voluptas eius, optio quaerat voluptates et possimus non eum, aperiam
+                            maiores
+                            odio repellat unde consequuntur dolores nesciunt dolore! Vero iure impedit perspiciatis
+                            quia?
+                            Magnam ratione rem expedita similique sequi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Não gostei do produto, o que fazer?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, iure quis, ad
+                            distinctio nam voluptates saepe nulla facere at enim harum praesentium maxime labore
+                            mollitia
+                            dolores doloribus ullam illo vero cupiditate, quam sunt natus. Eius modi exercitationem
+                            eos
+                            dolores, necessitatibus nostrum error tenetur quidem perferendis eum ex voluptatibus
+                            dolorum
+                            recusandae rerum praesentium excepturi iure consectetur distinctio. Blanditiis,
+                            temporibus,
+                            tenetur aperiam incidunt quos accusamus corporis voluptas earum consectetur modi
+                            repellendus.
+                            Debitis rem ut doloremque, minus quaerat dignissimos nostrum, ex id fugiat, cum dolores
+                            non
+                            ullam ab natus explicabo maiores adipisci asperiores sapiente. Fugit repellendus qui,
+                            quod
+                            minima consequuntur beatae quidem quam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- fim accordion -->
+
+
+        <h2 class="display-2 text-center my-4 text-purple" id="videos">Vídeos</h2>
+        <!-- criando a linha do grid -->
+        <article class="row">
+            <section class="col-md-4 my-3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/NN-9SQXoi50" title="YouTube video"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section class="col-md-4 my-3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/yasiyS7dkcU" title="YouTube video"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section class="col-md-4 my-3">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/Lbj5C-Sw2_A" title="YouTube video"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+        </article>
+        <!-- fim vídeos -->
+
+        <!-- início da área de contato -->
+        <h2 class="display-2 text-center my-4 text-purple" id="videos">Criar Conta</h2>
+
+
+        <!-- começa o formulário de dados -->
+        <form id="conta" name="conta" method="post" action="">
+
+            <section class="row">
+                <div class="col-sm-12 col-md-4 my-3">
+                    <label for="usuario" class="form-label">Usuário</label>
+                    <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Ex: user123456"
+                        minlength="10" maxlength="20" required>
+                </div>
+
+                <div class="col-sm-12 col-md-4 my-3">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="senha" name="senha" placeholder="Ex: 123456"
+                        minlength="6" maxlength="10" required>
+                </div>
+
+                <div class="col-sm-12 col-md-4 my-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ex: seuemail@email.com" required>
+                </div>
+
+                <!-- date - data
+                            time - hora
+                            datetime-local - data e a gora juntos no mesmo campo
+                            week - número da semana no ano
+                            Month - retorna o mês                    
+                    -->
+                <div class="col-sm-12 col-md-4 my-3">
+                    <label for="dtaCadastro" class="form-label">Data do Cadastro</label>
+                    <input type="date" class="form-control" id="dtaCadastro" name="dtaCadastro" required>
+                </div>
+
+                <div class="col-sm-12 col-md-4 my-3">
+                    <label for="console" class="form-label">Console Favorito</label>
+                    <select name="console" id="console" class="form-select">
+                        <option value="0" disabled selected>Selecione seu console</option>
+                        <option value="1">Master System</option>
+                        <option value="2">Mega Drive</option>
+                        <option value="3">Super Nintendo</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-12 col-md-4 my-3">
+                    <p>Tipo de Conta</p>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="contaOptions" id="conta1" value="option1">
+                        <label class="form-check-label" for="conta1">Free</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="contaOptions" id="conta2" value="option2">
+                        <label class="form-check-label" for="conta2">Premium</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="contaOptions" id="conta3" value="option3">
+                        <label class="form-check-label" for="conta3">Plus</label>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 my-3">
+                    <label for="celular" class="form-label">Celular</label>
+                    <input type="tel" class="form-control" id="celular" name="celular" required>
+                </div>
+
+                <div class="col-sm-12 col-md-4 my-3">
+                    <label for="numero" class="form-label">Número</label>
+                    <input type="number" class="form-control" id="numero" name="numero" required min="10" max="200"
+                        step="10">
+                </div>
+
+                <div class="col-sm-12 col-md-4 my-3">
+                    <label for="barra" class="form-label">Barra</label>
+                    <input type="range" class="form-range" id="barra" name="barra" required min="10" max="200"
+                        step="10">
+                </div>
+
+                <div class="col-12 my-3">
+                    <label for="bio" class="form-label">Fale sobre você</label>
+                    <textarea name="bio" id="bio" class="form-control"
+                        placeholder="Ex: Eu sou uma pessoa..."></textarea>
+                </div>
+
+                <div class="col-12 my-3 d-flex justify-content-end">
+                    <!-- <input type="submit" value="Criar Conta" class="btn btn-outline-purple">
+                        <input type="reset" value="Limpar Dados" class="btn btn-danger">
+                        <input type="button" value="Chamar JS" class="btn btn-dark"> -->
+
+                    <button type="submit" class="btn btn-outline-purple">Criar Conta</button>
+                    <!-- <button type="reset" class="btn btn-danger">Limpar Dados</button>
+                        <button type="button" class="btn btn-dark">Chamar JS</button> -->
+                </div>
+            </section>
+        </form>
+        <!-- termina o formulário de dados -->
+        <!-- fim da área de contato -->
+    </main>
+
+    <footer class="footer mt-5 p-5">
+
+        <section class="row">
+
+            <div class="col-12 col-md-4">
+                <h4 class="border-bottom py-3">MyGames</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Vídeos</a></li>
+                    <li><a href="#">Criar Conta</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4">
+                <h4 class="border-bottom py-3">Contato</h4>
+                <ul>
+                    <li>Av. Lins de Vanconcelos, 1222</li>
+                    <li>Aclimação - São Paulo - SP</li>
+                    <li>(11) 3385-8010</li>
+                    <li>mygames@mygames.com</li>
+                </ul>
+            </div>
+<div class="col-12 col-md-4">
+    <h4 class="border-bottom py-3">Social Media</h4>
+    <div>
+        <a href="http://www.twitter.com" target="_blank"><i class="bi bi-twitter fs-4 me-3 icone"></i></a>
+        <a href="https://www.twitch.com" target="_blank"><i class="bi bi-twitch fs-4 me-3 icone"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram fs-4 me-3 icone"></i></a>
+        <a href="https://www.discord.com" target="_blank"><i class="bi bi-discord fs-4 me-3 icone"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube fs-4 me-3 icone"></i></a>
+    </div>
+</div>
+        </section>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
